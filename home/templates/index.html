@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Papo & Saúde</title>
+    <title>Papo  Saúde</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
@@ -33,14 +33,14 @@
     <div class="contaner">
       
       <div id="dengue" class="box">
-        <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><img class="img-container" src="{% static 'home/img/dengue.png' %}" alt="foto denge" /></a>
+        <a target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><img class="img-container" src="{% static 'home/img/dengue.png' %}" alt="foto denge" /></a>
       </div>
 
       <div id="mes-saude" class="box">
-        <a href=""><img class="img-container" src="{% static 'home/img/fevereiro.png' %}" alt="foto mes" /></a>
+        <a target="_blank" href="https://www.marcoazul.org.br/"><img class="img-container" src="{% static 'home/img/marco.png' %}" alt="foto mes" /></a>
       </div>
       <div id="vacina" class="box">
-        <a href="#"><img class="img-container" src="{% static 'home/img/gotinha.png' %}" alt="foto gotinha" /></a>
+        <a target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><img class="img-container" src="{% static 'home/img/gotinha.png' %}" alt="foto gotinha" /></a>
         <div>
           <blockquote cite="https://www.who.int/pt/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines/explainers?adgroupsurvey={adgroupsurvey}&gad_source=1&gclid=EAIaIQobChMI3pTw-v7BhAMVlFlIAB1hLwvoEAAYASAAEgJCb_D_BwE"><p>Saiba mais sobre vacinas desde as primeiras etapas de pesquisa até sua implantação em países.</p></blockquote>
           
@@ -48,25 +48,30 @@
       </div>
       <div id="parceiros" class="box">
         <h2>Parceiros</h2>
-        <h3>Seja um parceiro, Papo&Saúde!</h3>
+        <h3>Seja um parceiro, PapoSaúde!</h3>
               
         <h1></h1>
         <p></p>
       </div>
-      <div id="Contato" class="box">
-        <h2>Cálculo IMC</h2>
+      <div id="imc" class="box">
+        <h2 class="h1-imc">Cálculo IMC</h2>
         <blockquote cite="">
           <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
           <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
           <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
         </blockquote>
-        <h3 class="calc">Calculadora de IMC</h3>
-        <label for="ipt_altura">Altura ( Ex: 1.84)</label>
-        <input type="number" value="" placeholder="Altura em metros." name="Altura" id="ipt_altura" /><br />
-        <label for="ipt_peso">Peso ( Ex: 90.6)</label>
-        <input type="number" value="" placeholder="Peso em Kg." name="Altura" id="ipt_peso" /><br />
-        <input onclick="imc()" type="submit" value="Calcular" />
-        <input type="reset" value="Limpar" />
+        
+           <h3 class="calc">Calculadora de IMC</h3>
+           <div class="div-calc">
+          <form action="">
+           <label for="ipt_altura">Altura ( Ex: 1.84)</label>
+           <input class="input-imc" type="number" value="" placeholder="Altura em metros." name="altura" id="ipt_altura" /><br /><br/>
+           <label for="ipt_peso">Peso ( Ex: 90.6)</label>
+           <input class="input-imc" type="number" value="" placeholder="Peso em Kg." name="Altura" id="ipt_peso" /><br /><br/>
+           <input id="btn_calcular" class="btn_calculadora"  onclick="imc()" type="submit" value="Calcular" />
+           <input id="btn_reset" class="btn_calculadora" type="reset" value="Limpar" />
+          </form>
+        </div>
       </div>
     </div>
     

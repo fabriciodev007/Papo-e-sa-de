@@ -37,21 +37,53 @@ a {
     border: 1px solid rgb(13, 46, 235);
     background-color: antiquewhite;
 }
+/* Configuração do calculo Imc*/
 
-.calc {
-    margin-left: 30px;
-}
+
 
 .gotinha {
     width: 200px;
     height: 200px;
 }
 
-body{
+body {
     background-color: rgb(133, 45, 45);
 }
-.img-container{
+
+.img-container {
     width: 430px;
     height: 300px;
 
+}
+
+.calc {
+    position: relative;
+    left: 120px;
+
+}
+.h1-imc{
+    position: relative;
+    left: 120px;
+
+}
+.div-calc{
+   
+    padding-bottom: 15px;
+}
+#ipt_peso{
+    margin-left: 10px;
+  
+}
+.div-calc{
+    position: relative;
+    left: 40px;
+    width: 320px;
+}
+.btn_calculadora{
+    width: 100px;
+    position: relative;
+    left: 50px;
+}
+#btn_reset{
+    margin-left: 10px;
 }
