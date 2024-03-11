@@ -35,8 +35,9 @@ a {
 
 .box {
     border: 1px solid rgb(13, 46, 235);
-    background-color: antiquewhite;
+
 }
+
 /* Configuração do calculo Imc*/
 
 
@@ -53,6 +54,7 @@ body {
 .img-container {
     width: 430px;
     height: 300px;
+    opacity: 0.8;
 
 }
 
@@ -61,29 +63,61 @@ body {
     left: 120px;
 
 }
-.h1-imc{
+
+.h1-imc {
     position: relative;
     left: 120px;
 
 }
-.div-calc{
-   
+
+.div-calc {
+
     padding-bottom: 15px;
 }
-#ipt_peso{
+
+#ipt_peso {
     margin-left: 10px;
-  
+
 }
-.div-calc{
+
+.div-calc {
     position: relative;
     left: 40px;
     width: 320px;
 }
-.btn_calculadora{
+
+.btn_calculadora {
     width: 100px;
     position: relative;
     left: 50px;
 }
-#btn_reset{
+
+#btn_reset {
     margin-left: 10px;
+}
+
+.link-dengue {
+    position: absolute;
+}
+
+.txt-dengue {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: underline;
+    top: 50px;
+}
+
+.link-vacina {
+    position: absolute;
+}
+
+.txt-vacina {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: underline;
+    top: 50px;
 }

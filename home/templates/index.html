@@ -18,7 +18,7 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="Destaques">Destaques</a>
+            <a href="#Destaques">Destaques</a>
           </li>
           <li>
             <a href="#">Sobre</a>
@@ -29,30 +29,37 @@
         </ul>
       </section>
     </header>
-    <h1>Destaques</h1>
+    <main>
+    <h1 id="Destaques">Destaques</h1>
     <div class="contaner">
-      
       <div id="dengue" class="box">
-        <a target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><img class="img-container" src="{% static 'home/img/dengue.png' %}" alt="foto denge" /></a>
+        <div class="link-dengue">
+          <a target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><img class="img-container" src="{% static 'home/img/dengue.png' %}" alt="foto denge" /></a>
+        </div>
+        <aside class="txt-dengue">
+          <a class="txt-dengue" target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"> <p>Aumento de casos de dengue!</p></a>
+         
+        </aside>
       </div>
 
       <div id="mes-saude" class="box">
         <a target="_blank" href="https://www.marcoazul.org.br/"><img class="img-container" src="{% static 'home/img/marco.png' %}" alt="foto mes" /></a>
       </div>
       <div id="vacina" class="box">
-        <a target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><img class="img-container" src="{% static 'home/img/gotinha.png' %}" alt="foto gotinha" /></a>
-        <div>
-          <blockquote cite="https://www.who.int/pt/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines/explainers?adgroupsurvey={adgroupsurvey}&gad_source=1&gclid=EAIaIQobChMI3pTw-v7BhAMVlFlIAB1hLwvoEAAYASAAEgJCb_D_BwE"><p>Saiba mais sobre vacinas desde as primeiras etapas de pesquisa até sua implantação em países.</p></blockquote>
-          
+        <div class="link-vacina">
+        <a target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><img class="img-container" src="{% static 'home/img/vacina.png' %}" alt="foto gotinha" /></a>
         </div>
+        <aside class="txt-vacina">
+          <a class="txt-vacina" target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><p>Acesse o calendario vacinal,<br> e veja se está em dia.</p></a> 
+          
+        </aside>
       </div>
-      <div id="parceiros" class="box">
-        <h2>Parceiros</h2>
-        <h3>Seja um parceiro, PapoSaúde!</h3>
-              
-        <h1></h1>
-        <p></p>
+      <div id="santa-tereza" class="box">
+        <div class="link-sante_tereza">
+          <a target="_blank" href="https://hospitalsantatereza.com.br/"><img class="img-container" src="{% static 'home/img/santa-tereza.png' %}" alt="foto gotinha" /></a>
+          </div>
       </div>
+      
       <div id="imc" class="box">
         <h2 class="h1-imc">Cálculo IMC</h2>
         <blockquote cite="">
@@ -73,8 +80,15 @@
           </form>
         </div>
       </div>
+      <div id="parceiros" class="box">
+        <h2>Parceiros</h2>
+        <h3>Seja um parceiro, PapoSaúde!</h3>
+              
+        <h1></h1>
+        <p></p>
+      </div>
     </div>
-    
+  </main>
     <script src="{% static 'home/js/javascript.js' %}" async defer></script>
   </body>
 </html>
