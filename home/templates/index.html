@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Papo  Saúde</title>
+    <title>Papo Saúde</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
@@ -12,83 +12,117 @@
   <body>
     <header class="cabeca">
       <img id="inicio_img" class="inicio_img" src="{% static 'home/img/papo.png' %}" alt="" />
-      <section class="sessao1">
-        <ul class="ul_inicio">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#Destaques">Destaques</a>
-          </li>
-          <li>
-            <a href="#">Sobre</a>
-          </li>
-          <li>
-            <a href="#">Contato / Parceiros</a>
-          </li>
-        </ul>
-      </section>
+      <div class="div_header">
+        <section class="sessao1">
+          <ul class="ul_inicio">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#Destaques">Destaques</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+            <li>
+              <a href="#">Parceiros</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </header>
     <main>
-    <h1 id="Destaques">Destaques</h1>
-    <div class="contaner">
-      <div id="dengue" class="box">
-        <div class="link-dengue">
-          <a target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><img class="img-container" src="{% static 'home/img/dengue.png' %}" alt="foto denge" /></a>
-        </div>
-        <aside class="txt-dengue">
-          <a class="txt-dengue" target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"> <p>Aumento de casos de dengue!</p></a>
-         
-        </aside>
-      </div>
-
-      <div id="mes-saude" class="box">
-        <a target="_blank" href="https://www.marcoazul.org.br/"><img class="img-container" src="{% static 'home/img/marco.png' %}" alt="foto mes" /></a>
-      </div>
-      <div id="vacina" class="box">
-        <div class="link-vacina">
-        <a target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><img class="img-container" src="{% static 'home/img/vacina.png' %}" alt="foto gotinha" /></a>
-        </div>
-        <aside class="txt-vacina">
-          <a class="txt-vacina" target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><p>Acesse o calendario vacinal,<br> e veja se está em dia.</p></a> 
-          
-        </aside>
-      </div>
-      <div id="santa-tereza" class="box">
-        <div class="link-sante_tereza">
-          <a target="_blank" href="https://hospitalsantatereza.com.br/"><img class="img-container" src="{% static 'home/img/santa-tereza.png' %}" alt="foto gotinha" /></a>
+      <h1 id="Destaques">Destaques</h1>
+      <div class="contaner">
+        <div id="dengue" class="box">
+          <div class="link-dengue">
+            <a target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><img class="img-container" src="{% static 'home/img/dengue.png' %}" alt="foto denge" /></a>
           </div>
-      </div>
-      
-      <div id="imc" class="box">
-        <h2 class="h1-imc">Cálculo IMC</h2>
-        <blockquote cite="">
-          <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-          <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
-          <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
-        </blockquote>
-        
-           <h3 class="calc">Calculadora de IMC</h3>
-           <div class="div-calc">
-          <form action="">
-           <label for="ipt_altura">Altura ( Ex: 1.84)</label>
-           <input class="input-imc" type="number" value="" placeholder="Altura em metros." name="altura" id="ipt_altura" /><br /><br/>
-           <label for="ipt_peso">Peso ( Ex: 90.6)</label>
-           <input class="input-imc" type="number" value="" placeholder="Peso em Kg." name="Altura" id="ipt_peso" /><br /><br/>
-           <input id="btn_calcular" class="btn_calculadora"  onclick="imc()" type="submit" value="Calcular" />
-           <input id="btn_reset" class="btn_calculadora" type="reset" value="Limpar" />
-          </form>
+          <aside class="txt-dengue">
+            <a class="txt-dengue" target="_blank" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/ministerio-da-saude-se-reune-com-agentes-de-saude-e-reforca-importancia-deles-na-luta-contra-a-dengue"><p>Aumento de casos de dengue!</p></a>
+          </aside>
+        </div>
+
+        <div id="mes-saude" class="box">
+          <a target="_blank" href="https://www.marcoazul.org.br/"><img class="img-container" src="{% static 'home/img/marco.png' %}" alt="foto mes" /></a>
+        </div>
+        <div id="vacina" class="box">
+          <div class="link-vacina">
+            <a target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario"><img class="img-container" src="{% static 'home/img/vacina.png' %}" alt="foto gotinha" /></a>
+          </div>
+          <aside class="txt-vacina">
+            <a class="txt-vacina" target="_blank" href="https://www.gov.br/saude/pt-br/vacinacao/calendario">
+              <p>
+                Acesse o calendario vacinal,<br /> e veja se está em dia.
+              </p>
+            </a>
+          </aside>
+        </div>
+        <div id="santa-tereza" class="box">
+          <div class="link-sante_tereza">
+            <a target="_blank" href="https://hospitalsantatereza.com.br/"><img class="img-container" src="{% static 'home/img/santa-tereza.png' %}" alt="foto gotinha" /></a>
+            <h2 class="titulo-sta">Hospital e Maternidade Santa Tereza</h2>
+            <blockquote cite="https://hospitalsantatereza.com.br/">
+              <p>A localização privilegiada, o elevado suporte tecnológico e a excelência do seu corpo clínico e funcional são alguns dos diferenciais do Hospital Santa Tereza, que presta serviços médico-hospitalares há quase meio século.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div id="imc" class="box">
+          <h2 class="h1-imc">Cálculo IMC</h2>
+          <blockquote cite="">
+            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+            <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+            <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+          </blockquote>
+
+          <h3 class="calc">Calculadora de IMC</h3>
+          <div class="div-calc">
+            <form action="">
+              <label for="ipt_altura">Altura ( Ex: 1.84)</label>
+              <input class="input-imc" type="number" value="" placeholder="Altura em metros." name="altura" id="ipt_altura" /><br /><br />
+              <label for="ipt_peso">Peso ( Ex: 90.6)</label>
+              <input class="input-imc" type="number" value="" placeholder="Peso em Kg." name="Altura" id="ipt_peso" /><br /><br />
+              <input id="btn_calcular" class="btn_calculadora" onclick="imc()" type="submit" value="Calcular" />
+              <input id="btn_reset" class="btn_calculadora" type="reset" value="Limpar" />
+            </form>
+          </div>
+        </div>
+        <div id="parceiros" class="box">
+          <h2 class="titulo-parc">Parceiros</h2>
+          <h3 class="sub-parc">Seja um parceiro, PapoSaúde!</h3>
+
+          <h1></h1>
+          <p></p>
         </div>
       </div>
-      <div id="parceiros" class="box">
-        <h2>Parceiros</h2>
-        <h3>Seja um parceiro, PapoSaúde!</h3>
-              
-        <h1></h1>
-        <p></p>
+    </main>
+    <footer>
+      <div class="div_header">
+        <section class="sessao1">
+          <ul class="ul_inicio">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#Destaques">Destaques</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+            <li>
+              <a href="#">Parceiros</a>
+            </li>
+          </ul>
+        </section>
       </div>
-    </div>
-  </main>
+    </footer>
     <script src="{% static 'home/js/javascript.js' %}" async defer></script>
   </body>
 </html>

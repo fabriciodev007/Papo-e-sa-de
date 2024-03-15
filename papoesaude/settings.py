@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'polls',
+    
 ]
 
 MIDDLEWARE = [
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'papoesaude.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_papoesade',
+        'NAME': 'db_papoesaude',
         'USER': 'root',
         'PASSWORD': 'F24180926**17@a',
         'HOST': 'localhost',
